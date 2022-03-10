@@ -1,0 +1,1 @@
+self.customElementsUpgrade=function(e){"use strict";const{keys:t}=Object;return e.expando=e=>{const n=t(e),r=[],{length:o}=n;for(let t=0;t<o;t++)r[t]=e[n[t]],delete e[n[t]];return()=>{for(let t=0;t<o;t++)e[n[t]]=r[t]}},e}({});
