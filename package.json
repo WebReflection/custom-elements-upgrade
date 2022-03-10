@@ -1,6 +1,6 @@
 {
   "name": "@webreflection/custom-elements-upgrade",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A polyfill shared utility to retrieve expand properties and update these later on.",
   "main": "./cjs/index.js",
   "scripts": {
