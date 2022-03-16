@@ -17,6 +17,23 @@ var customElementsUpgrade = (function (exports) {
     };
   };
 
+  const attributes = element => {
+    const {attributeChangedCallback, constructor} = element;
+    if (attributeChangedCallback) {
+      const {observedAttributes} = constructor;
+      if (observedAttributes) {
+        const {length} = observedAttributes;
+        for (let i = 0; i < length; i++) {
+          const name = observedAttributes[i];
+          const value = element.getAttribute(name);
+          if (value != null)
+            attributeChangedCallback.call(element, name, null, value);
+        }
+      }
+    }
+  };
+
+  exports.attributes = attributes;
   exports.expando = expando;
 
   return exports;

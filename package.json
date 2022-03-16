@@ -1,7 +1,7 @@
 {
   "name": "@webreflection/custom-elements-upgrade",
   "version": "0.1.1",
-  "description": "A polyfill shared utility to retrieve expand properties and update these later on.",
+  "description": "A shared utility for elements upgrade",
   "main": "./cjs/index.js",
   "scripts": {
     "build": "npm run cjs && npm run rollup:es && npm run rollup:index && npm run test",
