@@ -1,6 +1,6 @@
 {
   "name": "@webreflection/custom-elements-upgrade",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A shared utility for elements upgrade",
   "main": "./cjs/index.js",
   "scripts": {
